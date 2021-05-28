@@ -3,7 +3,7 @@ bin/
 tmp/
 .classpath
 .project
-logs/
+/logs/
 *.tmp
 *.bak
 *.swp
@@ -13,3 +13,4 @@ local.properties
 .loadpath
 .recommenders
 /target/
+.project/
