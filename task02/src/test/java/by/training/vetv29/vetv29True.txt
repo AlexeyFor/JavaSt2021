@@ -1,0 +1,6 @@
+coordinate x1: 0.05
+coordinate y1: 37.06
+coordinate x2: 568.05
+coordinate y2: -648.06
+coordinate x3: 0.05
+coordinate y3: 37.06

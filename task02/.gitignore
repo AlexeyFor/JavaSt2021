@@ -14,3 +14,4 @@ local.properties
 .recommenders
 /target/
 .project/
+test-ouput/

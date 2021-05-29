@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-29T14:53:20 MSK" name="Default suite" finished-at="2021-05-29T14:53:20 MSK" duration-ms="547">
+    <groups>
+    </groups>
+    <test started-at="2021-05-29T14:53:20 MSK" name="Default test" finished-at="2021-05-29T14:53:20 MSK" duration-ms="547">
+      <class name="by.training.vetv37.Vetv37LogicTest">
+        <test-method signature="negativeTestFromStrToDouble1()[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="negativeTestFromStrToDouble1" description="Negative scenary of countXFromTxt throw SearchDataInStrException" finished-at="2021-05-29T14:53:20 MSK" duration-ms="39" status="PASS">
+          <exception class="by.training.util.exception.SearchDataInStrException">
+            <message>
+              <![CDATA[by.training.util.exception.SearchDataInStrException: by.training.util.exception.SearchDataInStrException: incorrect data entered]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.util.exception.SearchDataInStrException: by.training.util.exception.SearchDataInStrException: by.training.util.exception.SearchDataInStrException: incorrect data entered
+at by.training.vetv37.Vetv37Logic.countXFromTxt(Vetv37Logic.java:68)
+at by.training.vetv37.Vetv37LogicTest.negativeTestFromStrToDouble1(Vetv37LogicTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: by.training.util.exception.SearchDataInStrException: by.training.util.exception.SearchDataInStrException: incorrect data entered
+at by.training.vetv37.Vetv37Logic.getXFromTxt(Vetv37Logic.java:46)
+at by.training.vetv37.Vetv37Logic.countXFromTxt(Vetv37Logic.java:62)
+... 29 more
+Caused by: by.training.util.exception.SearchDataInStrException: incorrect data entered
+at by.training.util.SearchDataInStr.searchDouble(SearchDataInStr.java:55)
+at by.training.vetv37.Vetv37Logic.getXFromTxt(Vetv37Logic.java:39)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.util.exception.SearchDataInStrException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTestFromStrToDouble1 -->
+        <test-method signature="negativeTestFromStrToDouble2()[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="negativeTestFromStrToDouble2" description="Negative scenary of countXFromTxt throw MyTxtReaderException" finished-at="2021-05-29T14:53:20 MSK" duration-ms="7" status="PASS">
+          <exception class="by.training.util.exception.MyTxtReaderException">
+            <message>
+              <![CDATA[by.training.util.exception.MyTxtReaderException: by.training.util.exception.MyTxtReaderException: ошибка доступа к файлу]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.util.exception.MyTxtReaderException: by.training.util.exception.MyTxtReaderException: by.training.util.exception.MyTxtReaderException: ошибка доступа к файлу
+at by.training.vetv37.Vetv37Logic.countXFromTxt(Vetv37Logic.java:71)
+at by.training.vetv37.Vetv37LogicTest.negativeTestFromStrToDouble2(Vetv37LogicTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: by.training.util.exception.MyTxtReaderException: by.training.util.exception.MyTxtReaderException: ошибка доступа к файлу
+at by.training.vetv37.Vetv37Logic.getXFromTxt(Vetv37Logic.java:43)
+at by.training.vetv37.Vetv37Logic.countXFromTxt(Vetv37Logic.java:62)
+... 29 more
+Caused by: by.training.util.exception.MyTxtReaderException: ошибка доступа к файлу
+at by.training.util.MyTxtReader.readFile(MyTxtReader.java:57)
+at by.training.vetv37.Vetv37Logic.getXFromTxt(Vetv37Logic.java:38)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.util.exception.MyTxtReaderException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTestFromStrToDouble2 -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_0.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-0.16666666666666666]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_2.9.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.05438033607047692]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_5.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_6.8.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-16.839999999999996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_-8.67.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-0.0015204168500118343]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_3.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+        <test-method signature="testCountXFromTxt(java.lang.String,double)[pri:0, instance:by.training.vetv37.Vetv37LogicTest@62727399]" started-at="2021-05-29T14:53:20 MSK" name="testCountXFromTxt" description="positive for countXFromTxt" data-provider="countXFromTxt" finished-at="2021-05-29T14:53:20 MSK" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vetv37_Infin.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Infinity]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountXFromTxt -->
+      </class> <!-- by.training.vetv37.Vetv37LogicTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

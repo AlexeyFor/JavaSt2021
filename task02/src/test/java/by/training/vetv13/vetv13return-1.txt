@@ -1,0 +1,4 @@
+coordinate x1: 1.05
+coordinate y1: -2.06
+coordinate x2: 469.05
+coordinate y2: 37.06
