@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-29T11:35:12 MSK" name="Default suite" finished-at="2021-05-29T11:35:12 MSK" duration-ms="207">
+    <groups>
+    </groups>
+    <test started-at="2021-05-29T11:35:12 MSK" name="Default test" finished-at="2021-05-29T11:35:12 MSK" duration-ms="207">
+      <class name="by.training.num13.Num13LogicTest">
+        <test-method signature="testCountPerimiter([D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testCountPerimiter" description="Positive scenary for countPerimeter" data-provider="countPerimeterPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@1d0d6318]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[35.66]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountPerimiter -->
+        <test-method signature="testCountSizes([[D,[D)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testCountSizes" description="Positive scenary for countSizes" data-provider="countSizesPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[D@765f05af]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@62f68dff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountSizes -->
+        <test-method signature="testCountSquare([D,[D)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testCountSquare" description="Positive scenary for countSquare" data-provider="countSquarePositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@25bc0606]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@5d1659ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountSquare -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@5c18016b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@33aeca0b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15.867476169826126]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@784b990c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@3d3ba765]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[47.447120039049786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@1ae67cad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@2f6e28bc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[47.447120039049786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@3e14c16d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@3c989952]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35.27211363102585]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@7c098bb3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@31e4bb20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35.48075534708922]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@f001896]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@13f17eb4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35.27211363102585]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@4ba302e0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@e98770d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35.48075534708922]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@43aaf813]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@57ac5227]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15.867476169826126]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@793138bd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@1951b871]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31.65726614854795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+        <test-method signature="testSum([D,[D,double)[pri:0, instance:by.training.num13.Num13LogicTest@2654635]" started-at="2021-05-29T11:35:12 MSK" name="testSum" description="Positive scenary for countSizeLength" data-provider="countSizeLengthPositiveData" finished-at="2021-05-29T11:35:12 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@18cebaa5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@463b4ac8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15.789886003388371]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSum -->
+      </class> <!-- by.training.num13.Num13LogicTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
