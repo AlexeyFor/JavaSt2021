@@ -33,7 +33,7 @@ public class ArrayLogic {
 	}
 
 	/**
-	 * find Eqals From any Two list. Use collections
+	 * find equals from any two list. Use collections
 	 * 
 	 * @param <T>
 	 * @param list1

@@ -74,7 +74,7 @@ public class CoordinateXYLogic {
 		} else if (distance1 == distance2) {
 			result = 0;
 		} else {
-			LOG.warn("can't compare distance, wrong data");
+			LOG.error("can't compare distance, wrong data");
 			throw new CoordinateXYLogicException("can't compare distance, wrong data");
 		}
 
@@ -118,7 +118,7 @@ public class CoordinateXYLogic {
 				return false;
 			}
 		} catch (NumberFormatException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			return false;
 		}
 	}

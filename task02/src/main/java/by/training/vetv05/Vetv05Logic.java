@@ -20,23 +20,21 @@ public class Vetv05Logic {
 
 	private static final Logger LOG = LogManager.getLogger(Vetv05Logic.class);
 
-	private double a;
-	private double b;
-
-	private void getNumbersFromTxt(String path) throws SearchDataInStrException {
-		LOG.info("getNumbersFromTxt started");
+	private double[] takeNumbersFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
+		LOG.info("takeNumbersFromTxt started");
 		MyTxtReader reader = MyTxtReader.getMyTxtReader();
 		SearchDataInStr search = SearchDataInStr.getSearchDataInStr();
+		double[] result = new double[2];
 
 		try {
 			LOG.debug("trying get numbers");
 			List<String> list = reader.readFile(path);
-			this.a = search.searchDouble(list.get(0), "number a: ");
-			this.b = search.searchDouble(list.get(1), "number b: ");
+			result[0] = search.searchDouble(list.get(0), "number a: ");
+			result[1] = search.searchDouble(list.get(1), "number b: ");
+			return result;
 		} catch (MyTxtReaderException e) {
-			System.out.println(e.getMessage());
+			throw new MyTxtReaderException(e);
 		} catch (SearchDataInStrException e) {
-			System.out.println(e.getMessage());
 			throw new SearchDataInStrException(e);
 		}
 	}
@@ -46,60 +44,71 @@ public class Vetv05Logic {
 	 * 
 	 * @param path (way to the file with numbers)
 	 * @return answer ( a > b ->1, a < b -> -1, a = b -> 0, smth wrong -> 2)
+	 * @throws MyTxtReaderException
+	 * @throws SearchDataInStrException
 	 */
-	public int compareNumFromTxt(String path) {
+	public int compareNumFromTxt(String path) throws MyTxtReaderException, SearchDataInStrException {
 		LOG.info("compareNumFromTxt started");
 		try {
-			getNumbersFromTxt(path);
-			int answer = compareTwoNum(this.a, this.b);
+			double[] nums = takeNumbersFromTxt(path);
+			int answer = compareTwoNum(nums[0], nums[1]);
 			LOG.debug("get answer " + answer);
 			return answer;
+		} catch (MyTxtReaderException e) {
+			LOG.error(e.getMessage());
+			throw new MyTxtReaderException("wrong path to the file");
 		} catch (SearchDataInStrException e) {
-			return 2;
+			LOG.error(e.getMessage());
+			throw new SearchDataInStrException("wrong data");
 		}
 
 	}
 
 	/**
-	 * compare two num
+	 * compare two double
 	 * 
 	 * @param first
 	 * @param second
-	 * @return answer ( a > b ->1, a < b -> -1, a = b -> 0, smth wrong -> 2)
+	 * @return answer ( a > b ->1, a < b -> -1, a = b -> 0)
 	 */
 	public int compareTwoNum(double first, double second) {
 		LOG.info("compareTwoNum started");
-		int result = 2;
+		int result;
 
 		if (first > second) {
 			result = 1;
-		}
-
-		if (first == second) {
-			result = 0;
-		}
-
-		if (first < second) {
+		} else if (first < second) {
 			result = -1;
+		} else {
+			result = 0;
 		}
 		LOG.debug("get result " + result);
 
 		return result;
 	}
 
-	public void demostrateResult(int num) {
-		LOG.info("demostrateResult started with num " + num);
-		if ((num > 1) || (num < -1)) {
-			System.out.println("comparison is impossible incorrect data");
-		}
-		if (num == 0) {
-			System.out.println("a = b");
-		}
-		if (num == 1) {
-			System.out.println("a > b");
-		}
-		if (num == -1) {
-			System.out.println("a < b");
+	/**
+	 * get path to the file with two double, compare them and show the result
+	 * 
+	 * @param path
+	 */
+	public void execute(String path) {
+		LOG.info("start execute");
+		try {
+			int result = compareNumFromTxt(path);
+			if (result == 0) {
+				System.out.println("a = b");
+			}
+			if (result == 1) {
+				System.out.println("a > b");
+			}
+			if (result == -1) {
+				System.out.println("a < b");
+			}
+		} catch (MyTxtReaderException e) {
+			System.out.println(e.getMessage());
+		} catch (SearchDataInStrException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 }

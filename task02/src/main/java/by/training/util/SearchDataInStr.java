@@ -40,7 +40,7 @@ public class SearchDataInStr {
 	 * return double from string
 	 * 
 	 * @param str
-	 * @param text (aftet this text will be the searched data)
+	 * @param text (after this text will be the searched data)
 	 * @return double
 	 * @throws SearchDataInStrException
 	 */
@@ -51,7 +51,7 @@ public class SearchDataInStr {
 		LOG.debug("get dataInStr " + dataInStr + ';');
 
 		if (!checkForINvalidCharacters("[^0-9\\-\\.]", dataInStr)) {
-			LOG.error("incorrect data entered");
+			LOG.warn("incorrect data entered");
 			throw new SearchDataInStrException("incorrect data entered");
 		}
 
@@ -62,12 +62,12 @@ public class SearchDataInStr {
 			try {
 				result = Double.valueOf(match.group(0));
 			} catch (NumberFormatException e) {
-				LOG.error("the entered value is greater than the max possible for this format");
+				LOG.warn("the entered value is greater than the max possible for this format");
 				throw new SearchDataInStrException(
 						"the entered value is greater than the max possible for this format");
 			}
 		} else {
-			LOG.error("incorrect data entered");
+			LOG.warn("incorrect data entered");
 			throw new SearchDataInStrException("incorrect data entered");
 		}
 		LOG.debug("return " + result);
@@ -89,7 +89,7 @@ public class SearchDataInStr {
 		LOG.debug("get dataInStr " + dataInStr + ';');
 
 		if (!checkForINvalidCharacters("[^0-9\\-]", dataInStr)) {
-			LOG.error("incorrect data entered");
+			LOG.warn("incorrect data entered");
 			throw new SearchDataInStrException("incorrect data entered");
 		}
 
@@ -100,12 +100,12 @@ public class SearchDataInStr {
 			try {
 				result = Integer.valueOf(match.group(0));
 			} catch (NumberFormatException e) {
-				LOG.error("the entered value is greater than the max possible for this format");
+				LOG.warn("the entered value is greater than the max possible for this format");
 				throw new SearchDataInStrException(
 						"the entered value is greater than the max possible for this format");
 			}
 		} else {
-			LOG.error("incorrect data entered");
+			LOG.warn("incorrect data entered");
 			throw new SearchDataInStrException("incorrect data entered");
 		}
 		LOG.debug("return " + result);
@@ -131,7 +131,7 @@ public class SearchDataInStr {
 		if (match.find()) {
 			result = match.group(0).charAt(0);
 		} else {
-			LOG.error("incorrect data entered");
+			LOG.warn("incorrect data entered");
 			throw new SearchDataInStrException("incorrect data entered");
 		}
 		LOG.debug("return " + result);

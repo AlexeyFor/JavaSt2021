@@ -13,11 +13,10 @@ public class DoMainVetv05 {
 	public static void main(String[] args) {
 
 		Vetv05Logic temp = new Vetv05Logic();
-		int answer;
 		String path;
 
 		path = System.getProperty("user.dir") + "//src//main//java//by//training//vetv05//vetv05.txt";
-		answer = temp.compareNumFromTxt(path);
-		temp.demostrateResult(answer);
+		temp.execute(path);
+
 	}
 }

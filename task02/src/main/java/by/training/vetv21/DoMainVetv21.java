@@ -14,7 +14,7 @@ public class DoMainVetv21 {
 
 		Vetv21Logic temp = new Vetv21Logic();
 		System.out.println("Кто ты: мальчик или девочка? Введи Д или М");
-		String answer = temp.vetv21Action();
+		String answer = temp.execute();
 		System.out.println(answer);
 	}
 }

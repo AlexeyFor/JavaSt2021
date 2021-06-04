@@ -1,2 +1,0 @@
-number a: 4,65
-number b: -2.65

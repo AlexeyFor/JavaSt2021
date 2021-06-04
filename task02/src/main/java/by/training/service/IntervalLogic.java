@@ -41,16 +41,16 @@ public class IntervalLogic {
 		double endMinusStart = endB - startA;
 
 		if (startA >= endB) {
-			LOG.debug("checkIntervalStep return false from startA <= endB");
+			LOG.warn("checkIntervalStep return false from startA <= endB");
 			return false;
 		}
 		if (endMinusStart < stepH) {
-			LOG.debug("checkIntervalStep return false from endB - startA < stepH");
+			LOG.warn("checkIntervalStep return false from endB - startA < stepH");
 			return false;
 		}
 		if (((endMinusStart) % stepH) > 0.00000000000001) {
 			double temp = (endB - startA) % stepH;
-			LOG.debug("checkIntervalStep return false from (endB - startA)% stepH with " + temp);
+			LOG.warn("checkIntervalStep return false from (endB - startA)% stepH with " + temp);
 			return false;
 		}
 

@@ -22,7 +22,7 @@ public class Vetv29Logic {
 
 	private static final Logger LOG = LogManager.getLogger(Vetv29Logic.class);
 
-	private CoordinateXY[] getCoordinatesFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
+	private CoordinateXY[] takeCoordinatesFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
 		LOG.info("getCoordinatesFromTxt started");
 		MyTxtReader reader = MyTxtReader.getMyTxtReader();
 		SearchDataInStr search = SearchDataInStr.getSearchDataInStr();
@@ -67,16 +67,16 @@ public class Vetv29Logic {
 
 		CoordinateXY[] mas;
 		try {
-			mas = getCoordinatesFromTxt(path);
+			mas = takeCoordinatesFromTxt(path);
 			CoordinateXYLogic temp = CoordinateXYLogic.getCoordinateXYLogic();
 			boolean answer = temp.threePointsOnLine(mas[0], mas[1], mas[2]);
 			LOG.debug("get answer " + answer);
 			return answer;
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new MyTxtReaderException(e);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e);
 		}
 	}
@@ -86,7 +86,7 @@ public class Vetv29Logic {
 	 * 
 	 * @param path
 	 */
-	public void vetv29Action(String path) {
+	public void execute(String path) {
 
 		try {
 			boolean answer;

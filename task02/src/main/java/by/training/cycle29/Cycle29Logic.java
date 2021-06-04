@@ -23,8 +23,8 @@ public class Cycle29Logic {
 
 	private static final Logger LOG = LogManager.getLogger(Cycle29Logic.class);
 
-	private int[] getTwoIntFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
-		LOG.info("getTwoIntFromTxt started");
+	private int[] takeTwoIntFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
+		LOG.info("takeTwoIntFromTxt started");
 
 		MyTxtReader reader = MyTxtReader.getMyTxtReader();
 		SearchDataInStr search = SearchDataInStr.getSearchDataInStr();
@@ -37,22 +37,22 @@ public class Cycle29Logic {
 			masResult[1] = search.searchInt(list.get(1), "second int: ");
 			return masResult;
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new MyTxtReaderException(e);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e);
 		}
 	}
 
 	/**
-	 * get two int and
+	 * get two int and and return common digits for two numbers
 	 * 
 	 * @param mas
 	 * @return List with repeated numbers
 	 */
 	private List<Integer> findEqalsNumInTwoInt(int mas[]) {
-		LOG.debug("start findEqalsNumInTwoInt with ");
+		LOG.debug("start findEqalsNumInTwoInt with " + mas[0] + " " + mas[1]);
 
 		Cycle37Logic logic = new Cycle37Logic();
 		List<Integer> firstNum = logic.fromIntToIntList(mas[0]);
@@ -75,20 +75,20 @@ public class Cycle29Logic {
 	 * @throws MyTxtReaderException
 	 * @throws SearchDataInStrException
 	 */
-	public int[] cycle29Action(String path) throws MyTxtReaderException, SearchDataInStrException {
-		LOG.info("start cycle29Action");
+	public int[] coommonDiggitsFromTwoIntTxt(String path) throws MyTxtReaderException, SearchDataInStrException {
+		LOG.info("start coommonDiggitsFromTwoIntTxt");
 
 		ArrayLogic arraysLogic = ArrayLogic.getArrayLogic();
 		try {
-			int[] twoNum = getTwoIntFromTxt(path);
+			int[] twoNum = takeTwoIntFromTxt(path);
 			List<Integer> list = findEqalsNumInTwoInt(twoNum);
 			int[] result = arraysLogic.fromListToArray(list);
 			return result;
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new MyTxtReaderException(e);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e);
 		}
 	}
@@ -98,13 +98,14 @@ public class Cycle29Logic {
 	 * 
 	 * @param path
 	 */
-	public void showCycle29Action(String path) {
+	public void execute(String path) {
+		LOG.info("start execute");
 
 		ShowArray show = ShowArray.getShowArray();
 
 		try {
 			int[] result;
-			result = cycle29Action(path);
+			result = coommonDiggitsFromTwoIntTxt(path);
 			show.showArray(result);
 		} catch (MyTxtReaderException e) {
 			System.out.println("wrong path");

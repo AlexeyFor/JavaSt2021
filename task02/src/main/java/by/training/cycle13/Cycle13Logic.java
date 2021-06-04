@@ -1,7 +1,12 @@
 package by.training.cycle13;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import by.training.service.IntervalLogic;
 
 /**
  * 
@@ -13,42 +18,41 @@ public class Cycle13Logic {
 	private static final Logger LOG = LogManager.getLogger(Cycle13Logic.class);
 
 	/**
+	 * Count function from the task
 	 * 
 	 * @param x
 	 * @return y
 	 */
-	public double countFunction(double x) {
+	public double calcFunction(double x) {
+		LOG.debug("calculate function with x = " + x);
 		double y;
 		y = 5 - ((x * x) / 2);
+		LOG.debug("get result y = " + y);
+
 		return y;
 	}
 
 	/**
-	 * count function on interval [-5;5] with step 0.5
+	 * calculate function on interval [-5;5] with step 0.5
 	 * 
-	 * @return double [2] [] where double [0] - x, and where double [1] - y
+	 * @return List<double[]>, where [0] = x, and [1] = F(x).
 	 */
-	public double[][] countFunctionOnInterval() {
+
+	public List<double[]> countFunctionOnInterval() {
+
 		LOG.info("start countFunctionOnInterval");
+
+		IntervalLogic logic = IntervalLogic.getIntervalLogic();
+		List<double[]> result = new ArrayList<double[]>();
+
 		double intervalStart = -5;
 		double intervalEnd = 5;
 		double step = 0.5;
-		int lengthOfMas = (int) (((intervalEnd - intervalStart) / step) + 1);
-		double[] masY = new double[lengthOfMas];
-		double[] masX = new double[lengthOfMas];
-		int i = 0;
-		double[][] result = new double[2][];
+		double[] stepsForFunction = logic.getIntervalsStep(intervalStart, intervalEnd, step);
 
-		for (double x = intervalStart; x <= intervalEnd; x += step) {
-			masX[i] = x;
-			masY[i] = countFunction(x);
-			LOG.debug("x = " + masX[i] + "  y = " + masY[i]);
-			i++;
+		for (double temp : stepsForFunction) {
+			result.add(new double[] { temp, calcFunction(temp) });
 		}
-
-		result[0] = masX;
-		result[1] = masY;
-
 		return result;
 	}
 

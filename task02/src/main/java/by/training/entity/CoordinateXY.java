@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 
- * @author AlexeySupruniuk numbers x, y check for NaN, if true - number = 0;
+ * @author AlexeySupruniuk
  */
 public class CoordinateXY implements Serializable {
 

@@ -21,9 +21,9 @@ public class DoMainVetv29 {
 	private static final Logger LOG = LogManager.getLogger(DoMainVetv29.class);
 
 	public static void main(String[] args) {
-
+		LOG.info("start from main ");
 		String path = System.getProperty("user.dir") + "//src//main//java//by//training//vetv29//vetv29.txt";
 		Vetv29Logic temp = new Vetv29Logic();
-		temp.vetv29Action(path);
+		temp.execute(path);
 	}
 }

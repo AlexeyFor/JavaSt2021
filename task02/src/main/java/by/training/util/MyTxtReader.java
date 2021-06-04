@@ -53,8 +53,8 @@ public class MyTxtReader {
 			}
 			reader.close();
 		} catch (IOException ex) {
-			LOG.warn("ошибка доступа к файлу");
-			throw new MyTxtReaderException("ошибка доступа к файлу");
+			LOG.error("wrong path to the file");
+			throw new MyTxtReaderException("wrong path to the file");
 		}
 		return list;
 	}

@@ -1,9 +1,9 @@
 package by.training.cycle13;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import by.training.service.ShowArray;
 
 /**
  * Составить таблицу значений функции y = 5 - x^2/2 на отрезке [-5; 5] с шагом
@@ -19,9 +19,8 @@ public class DoMainCycle13 {
 
 		LOG.info("start from main");
 		Cycle13Logic temp = new Cycle13Logic();
-		ShowArray show = ShowArray.getShowArray();
-		double[][] mas = temp.countFunctionOnInterval();
-		show.showDoubleArray(mas);
 
+		List<double[]> mas = temp.countFunctionOnInterval();
+		mas.forEach(x -> System.out.println(x[0] + "    " + x[1]));
 	}
 }

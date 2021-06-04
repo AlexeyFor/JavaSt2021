@@ -20,8 +20,8 @@ public class Cycle37Logic {
 	 * 
 	 * @return int {A, B}
 	 */
-	public int[] Cycle37Action() {
-		LOG.info("start Cycle37Action");
+	public int[] execute() {
+		LOG.info("start execute");
 		List<Integer> numA = new ArrayList<Integer>();
 
 		int temp;
@@ -39,6 +39,11 @@ public class Cycle37Logic {
 		return masResult;
 	}
 
+	/**
+	 * 
+	 * @param int aabb
+	 * @return mas {aa, bb}
+	 */
 	private int[] convertNumAABBtoAA_BB(int aabb) {
 		int numbersOfaabb[] = fromIntToIntArr(aabb);
 		int aa = numbersOfaabb[0] * 10 + numbersOfaabb[1];

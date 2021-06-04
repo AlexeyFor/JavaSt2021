@@ -16,9 +16,11 @@ public class DoMainCycle29 {
 
 	public static void main(String[] args) {
 
+		LOG.info("start from main");
+
 		String path = System.getProperty("user.dir") + "//src//main//java//by//training//cycle29//Cycle29.txt";
 		Cycle29Logic logic = new Cycle29Logic();
-		logic.showCycle29Action(path);
+		logic.execute(path);
 
 	}
 }

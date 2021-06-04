@@ -27,7 +27,7 @@ public class Vetv37Logic {
 	 * @throws SearchDataInStrException
 	 * @throws MyTxtReaderException
 	 */
-	private double getXFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
+	private double takeXFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
 		LOG.info("getXFromTxt started");
 		MyTxtReader reader = MyTxtReader.getMyTxtReader();
 		SearchDataInStr search = SearchDataInStr.getSearchDataInStr();
@@ -39,10 +39,10 @@ public class Vetv37Logic {
 			x = search.searchDouble(list.get(0), "x = ");
 			return x;
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new MyTxtReaderException(e);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e);
 		}
 	}
@@ -55,19 +55,19 @@ public class Vetv37Logic {
 	 * @throws SearchDataInStrException
 	 * @throws MyTxtReaderException
 	 */
-	public double countXFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
-		LOG.info("countXFromTxt started");
+	public double calcXFromTxt(String path) throws SearchDataInStrException, MyTxtReaderException {
+		LOG.info("calcXFromTxt started");
 
 		try {
-			double x = getXFromTxt(path);
+			double x = takeXFromTxt(path);
 			LOG.debug("get x = " + x);
 			double answer = countFunction(x);
 			return answer;
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e);
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new MyTxtReaderException(e);
 		}
 
@@ -78,16 +78,16 @@ public class Vetv37Logic {
 	 * 
 	 * @param path
 	 */
-	public void vetv37Action(String path) {
-		LOG.info("vetv37Action started");
+	public void execute(String path) {
+		LOG.info("execute started");
 		try {
-			double answer = countXFromTxt(path);
+			double answer = calcXFromTxt(path);
 			System.out.println("F(x) = " + answer);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			System.out.println(e.getMessage());
 		} catch (MyTxtReaderException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			System.out.println(e.getMessage());
 		}
 	}

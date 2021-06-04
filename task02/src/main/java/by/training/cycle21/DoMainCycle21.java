@@ -20,6 +20,6 @@ public class DoMainCycle21 {
 
 		String path = System.getProperty("user.dir") + "//src//main//java//by//training//cycle21//Cycle21.txt";
 		Cycle21Logic logic = new Cycle21Logic();
-		logic.showCуcle21(path);
+		logic.execute(path);
 	}
 }

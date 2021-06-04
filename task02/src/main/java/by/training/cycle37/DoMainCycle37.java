@@ -21,7 +21,7 @@ public class DoMainCycle37 {
 		Cycle37Logic temp = new Cycle37Logic();
 
 		LOG.info("start from main");
-		int mas[] = temp.Cycle37Action();
+		int mas[] = temp.execute();
 		System.out.println(String.format("numbers are: A = %s, B = %s", mas[1], mas[0]));
 	}
 }

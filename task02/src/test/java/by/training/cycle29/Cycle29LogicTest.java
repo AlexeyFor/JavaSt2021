@@ -24,7 +24,7 @@ public class Cycle29LogicTest {
 	@Test(description = "positive for cycle29Action", dataProvider = "cycle29ActionPositive")
 	public void testCycle29Action(String name, int[] answer) throws SearchDataInStrException, MyTxtReaderException {
 		String fileName = defaultPath + name;
-		int[] actual = temp.cycle29Action(fileName);
+		int[] actual = temp.coommonDiggitsFromTwoIntTxt(fileName);
 		int[] expected = answer;
 		assertEquals(actual, expected);
 	}
@@ -32,13 +32,13 @@ public class Cycle29LogicTest {
 	@Test(description = "negative for cycle29Action", enabled = true, expectedExceptions = MyTxtReaderException.class)
 	public void testCycle29Action1() throws SearchDataInStrException, MyTxtReaderException {
 		String fileName = defaultPath + "WrongFile.txt";
-		int[] actual = temp.cycle29Action(fileName);
+		int[] actual = temp.coommonDiggitsFromTwoIntTxt(fileName);
 	}
 
 	@Test(description = "negative for cycle29Action", enabled = true, expectedExceptions = SearchDataInStrException.class)
 	public void testCycle29Action2() throws SearchDataInStrException, MyTxtReaderException {
 		String fileName = defaultPath + "Cycle29_ThrowsData.txt";
-		int[] actual = temp.cycle29Action(fileName);
+		int[] actual = temp.coommonDiggitsFromTwoIntTxt(fileName);
 	}
 
 }

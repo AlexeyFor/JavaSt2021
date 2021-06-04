@@ -41,6 +41,11 @@ public class ShowArray {
 		}
 	}
 
+	/**
+	 * show array int []
+	 * 
+	 * @param mas
+	 */
 	public void showArray(int[] mas) {
 		LOG.debug("start showArray");
 

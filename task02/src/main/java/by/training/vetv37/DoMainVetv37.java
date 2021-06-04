@@ -13,6 +13,6 @@ public class DoMainVetv37 {
 
 		String path = System.getProperty("user.dir") + "//src//main//java//by//training//task02//vetv37//Vetv37.txt";
 		Vetv37Logic temp = new Vetv37Logic();
-		temp.vetv37Action(path);
+		temp.execute(path);
 	}
 }

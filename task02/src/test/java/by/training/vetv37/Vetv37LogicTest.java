@@ -24,7 +24,7 @@ public class Vetv37LogicTest {
 	@Test(description = "positive for countXFromTxt", dataProvider = "countXFromTxt")
 	public void testCountXFromTxt(String name, double result) throws SearchDataInStrException, MyTxtReaderException {
 		String fileName = defaultPath + name;
-		double actual = temp.countXFromTxt(fileName);
+		double actual = temp.calcXFromTxt(fileName);
 		double expected = result;
 		assertEquals(actual, expected);
 	}
@@ -32,13 +32,13 @@ public class Vetv37LogicTest {
 	@Test(description = "Negative scenary of countXFromTxt throw SearchDataInStrException", enabled = true, expectedExceptions = SearchDataInStrException.class)
 	public void negativeTestFromStrToDouble1() throws SearchDataInStrException, MyTxtReaderException {
 		String path = defaultPath + "vetv37_ThrowData.txt";
-		double actual = temp.countXFromTxt(path);
+		double actual = temp.calcXFromTxt(path);
 	}
 
 	@Test(description = "Negative scenary of countXFromTxt throw MyTxtReaderException", enabled = true, expectedExceptions = MyTxtReaderException.class)
 	public void negativeTestFromStrToDouble2() throws SearchDataInStrException, MyTxtReaderException {
 		String path = defaultPath + "wrongFile.txt";
-		double actual = temp.countXFromTxt(path);
+		double actual = temp.calcXFromTxt(path);
 	}
 
 }

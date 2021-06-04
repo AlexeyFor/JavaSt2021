@@ -22,8 +22,8 @@ public class Vetv21Logic {
 	 * @return char from console
 	 * @throws SearchDataInStrException
 	 */
-	public char getCharFromScan() throws SearchDataInStrException {
-		LOG.info("start searchChar");
+	public char takeCharFromScan() throws SearchDataInStrException {
+		LOG.info("start takeCharFromScan");
 		MyScan scan = MyScan.getMyScan();
 		SearchDataInStr searchDataInStr = SearchDataInStr.getSearchDataInStr();
 		String str = scan.getScan();
@@ -34,7 +34,7 @@ public class Vetv21Logic {
 			ch = searchDataInStr.searchChar(str, "");
 			LOG.debug("get char: " + ch);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			throw new SearchDataInStrException(e.getMessage());
 		}
 		LOG.debug("return: " + ch);
@@ -46,16 +46,16 @@ public class Vetv21Logic {
 	 * 
 	 * @return String
 	 */
-	public String vetv21Action() {
+	public String execute() {
 		LOG.info("start vetv21Action");
 
 		String result;
 
 		try {
-			char ch = getCharFromScan();
+			char ch = takeCharFromScan();
 			result = pleaser(ch);
 		} catch (SearchDataInStrException e) {
-			LOG.warn(e.getMessage());
+			LOG.error(e.getMessage());
 			result = e.getMessage();
 		}
 		LOG.debug("return: " + result);
