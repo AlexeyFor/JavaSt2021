@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-13T23:10:01 MSK" name="Default suite" finished-at="2021-06-13T23:10:01 MSK" duration-ms="172">
+    <groups>
+    </groups>
+    <test started-at="2021-06-13T23:10:01 MSK" name="Default test" finished-at="2021-06-13T23:10:01 MSK" duration-ms="172">
+      <class name="by.training.service.sorting.MatrixCalculationImplTest">
+        <test-method signature="matrixAdditionTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixAdditionTest" description="positive for matrixAddition" data-provider="matrixAddition" finished-at="2021-06-13T23:10:01 MSK" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@23d1e5d0, [Ljava.lang.Integer;@704f1591, [Ljava.lang.Integer;@58fb7731]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@13e547a9, [Ljava.lang.Integer;@3fb6cf60, [Ljava.lang.Integer;@37ddb69a]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@349c1daf, [Ljava.math.BigDecimal;@dfddc9a, [Ljava.math.BigDecimal;@4b9df8a]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixAdditionTest -->
+        <test-method signature="matrixAdditionTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixAdditionTest" description="positive for matrixAddition" data-provider="matrixAddition" finished-at="2021-06-13T23:10:01 MSK" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@4e70a728, [Ljava.lang.Integer;@b7838a9, [Ljava.lang.Integer;@696f0212]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@5733f295, [Ljava.lang.Integer;@1c3146bc, [Ljava.lang.Integer;@56c698e3]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@47a86fbb, [Ljava.math.BigDecimal;@f478a81, [Ljava.math.BigDecimal;@19553973]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixAdditionTest -->
+        <test-method signature="matrixMultiplicationTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixMultiplicationTest" description="positive for matrixMultiplication" data-provider="matrixMultiplication" finished-at="2021-06-13T23:10:01 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@4c4748bf, [Ljava.lang.Integer;@7ce97ee5, [Ljava.lang.Integer;@32c8e539]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@73dce0e6, [Ljava.lang.Integer;@5a85c92, [Ljava.lang.Integer;@32811494]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@4795ded0, [Ljava.math.BigDecimal;@53dacd14, [Ljava.math.BigDecimal;@14d14731]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixMultiplicationTest -->
+        <test-method signature="matrixMultiplicationTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixMultiplicationTest" description="positive for matrixMultiplication" data-provider="matrixMultiplication" finished-at="2021-06-13T23:10:01 MSK" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@47c4ecdc, [Ljava.lang.Integer;@42f33b5d, [Ljava.lang.Integer;@5c8504fd]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@4b7e96a, [Ljava.lang.Integer;@6475472c, [Ljava.lang.Integer;@3f07b12c]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@4bd1f8dd, [Ljava.math.BigDecimal;@7096b474, [Ljava.math.BigDecimal;@3e14c16d]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixMultiplicationTest -->
+        <test-method signature="matrixSubtractionTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixSubtractionTest" description="positive for matrixSubtraction" data-provider="matrixSubtraction" finished-at="2021-06-13T23:10:01 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@4ba302e0, [Ljava.lang.Integer;@e98770d, [Ljava.lang.Integer;@1ae67cad]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@2f6e28bc, [Ljava.lang.Integer;@7c098bb3, [Ljava.lang.Integer;@31e4bb20]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@18cebaa5, [Ljava.math.BigDecimal;@463b4ac8, [Ljava.math.BigDecimal;@765f05af]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixSubtractionTest -->
+        <test-method signature="matrixSubtractionTest(by.training.entity.Matrix,by.training.entity.Matrix,by.training.entity.Matrix)[pri:0, instance:by.training.service.sorting.MatrixCalculationImplTest@130dca52]" started-at="2021-06-13T23:10:01 MSK" name="matrixSubtractionTest" description="positive for matrixSubtraction" data-provider="matrixSubtraction" finished-at="2021-06-13T23:10:01 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@784b990c, [Ljava.lang.Integer;@3d3ba765, [Ljava.lang.Integer;@25bc0606]]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.lang.Integer;@5d1659ea, [Ljava.lang.Integer;@793138bd, [Ljava.lang.Integer;@1951b871]]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Matrix [matrix=[[Ljava.math.BigDecimal;@5c18016b, [Ljava.math.BigDecimal;@33aeca0b, [Ljava.math.BigDecimal;@43aaf813]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matrixSubtractionTest -->
+      </class> <!-- by.training.service.sorting.MatrixCalculationImplTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
