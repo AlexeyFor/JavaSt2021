@@ -60,7 +60,7 @@ public class ShellSortingCommand <T extends Comparable<T>> implements Command {
 			if (show) {
 				LOG.debug("showing array");
 				ShowMyArray showArr = ShowMyArray.getInstance();
-				showArr.showMyArrayInRow(array, 20);
+				showArr.showMyArrayInRow(array, 50);
 			}
 
 		} catch (ServiceException e) {
@@ -68,7 +68,7 @@ public class ShellSortingCommand <T extends Comparable<T>> implements Command {
 			return "1___" + e.getMessage();
 		}
 
-		return "0__shell_sort_success";
+		return "0___shell_sort_success";
 	}
 
 }

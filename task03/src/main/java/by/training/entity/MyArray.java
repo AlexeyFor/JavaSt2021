@@ -25,9 +25,9 @@ public class MyArray<T> implements Serializable {
 		super();
 	}
 
-	public T[] getValue() {
-		return myArray;
-	}
+//	public T[] getValue() {
+//		return myArray;
+//	}
 
 	public T getValue(int index) {
 		return myArray[index];

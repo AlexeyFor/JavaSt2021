@@ -59,11 +59,21 @@ public class MatrixIntegerCreator {
 	public Matrix<Integer> createMatrix(Integer[]... array) throws CreatorException {
 		LOG.debug("start createMatrix");
 		int length = array[0].length;
+		if (length == 0) {
+			LOG.warn("from createMatrix, wrong array length ");
+			throw new CreatorException("wrong_parametres");
+		}
 
 		for (int i = 1; i < array.length; i++) {
 			if (array[1].length != length) {
 				LOG.warn("from createMatrix, wrong array length ");
 				throw new CreatorException("wrong_parametres");
+			}
+			for (int j = 0; j < array[i].length; j++) {
+				if ((array[i][j] == null)) {
+					LOG.warn("null in matrix");
+					throw new CreatorException("null in matrix");
+				}
 			}
 		}
 		Matrix<Integer> result = new Matrix<Integer>(array);

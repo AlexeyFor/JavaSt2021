@@ -22,10 +22,18 @@ public class CommandProvider {
 		commands.put("SELECTION SORTING", new SelectionSortingCommand());
 		commands.put("SHAKE SORTING", new ShakeSortingCommand());
 		commands.put("SHELL SORTING", new ShellSortingCommand());
+		commands.put("BINARY MERGING SORTING", new BinaryMergingSortingCommand());
+
 		commands.put("MATRIX ADDITION", new MatrixAdditionCommand());
 		commands.put("MATRIX SUBTRACTION", new MatrixSubtractionCommand());
 		commands.put("MATRIX MULTIPLICATION", new MatrixMultiplicationCommand());
+		commands.put("SHOW MATRIX", new ShowMatrixCommand());
+		commands.put("SHOW MYARRAY", new ShowMyArrayCommand());
 
+		commands.put("ERROR СOMMAND", new ErrorCommand());
+		commands.put("SET LANGUAGE", new SetLanguageCommand());
+
+		
 
 	}
 
@@ -34,7 +42,7 @@ public class CommandProvider {
 			Command com = commands.get(key);
 			return com;
 		} else {
-			return commands.get("Err");
+			return commands.get("ERROR СOMMAND");
 		}
 
 	}

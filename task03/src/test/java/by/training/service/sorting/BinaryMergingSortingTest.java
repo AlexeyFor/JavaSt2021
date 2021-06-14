@@ -9,8 +9,8 @@ import by.training.entity.MyArray;
 import by.training.service.creator.CreatorException;
 import by.training.service.creator.MyArrayIntegerCreator;
 
-public class InsertsHashNumberSortingTest {
-	InsertsHashNumberSorting tmp = new InsertsHashNumberSorting();
+public class BinaryMergingSortingTest {
+	BinaryMergingSorting tmp = new BinaryMergingSorting();
 	MyArrayIntegerCreator creator = new MyArrayIntegerCreator();
 
 	@DataProvider(name = "PositiveForSorting")
@@ -60,4 +60,6 @@ public class InsertsHashNumberSortingTest {
 	}
 
 }
+
+
 

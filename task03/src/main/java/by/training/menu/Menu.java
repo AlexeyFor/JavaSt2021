@@ -7,9 +7,29 @@ import by.training.controller.Controller;
 import by.training.controller.ControllerImpl;
 
 public class Menu {
+	
+	private static Menu instance = new Menu();
 
-	private Locale locale = new Locale("ru", "RU");
+	private Menu() {
+	}
+
+	public static Menu getInstance() {
+		return instance;
+	}
+
+	private Locale locale = new Locale("en", "US");
 	private ResourceBundle rb = ResourceBundle.getBundle("langs.text", locale);
+
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+	
+	public void changeLanguage (String language, String country) {
+		locale = new Locale(language, country);
+		this.rb = ResourceBundle.getBundle("langs.text", locale);
+	}
+
+	
 
 	public void menu(String str) {
 		Controller contr = ControllerImpl.getController();
@@ -27,6 +47,5 @@ public class Menu {
 			System.out.println(rb.getString(answ.split("___")[1]));
 
 		}
-
 	}
 }

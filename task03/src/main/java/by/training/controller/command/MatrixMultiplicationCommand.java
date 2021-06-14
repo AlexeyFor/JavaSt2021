@@ -31,6 +31,7 @@ public class MatrixMultiplicationCommand<T extends Number> implements Command {
 	public String execute(String[] request) {
 
 		if (request.length != 3) {
+			LOG.warn("wrong request");
 			return "1___wrong_request";
 		}
 

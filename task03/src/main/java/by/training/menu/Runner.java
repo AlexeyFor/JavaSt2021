@@ -32,23 +32,36 @@ public class Runner {
 	public static void main(String args[]) {
 		String path = System.getProperty("user.dir") + "//src//main//java//by//training//source//";
 
-		Menu menu = new Menu();
+		Menu menu = Menu.getInstance();
 
-		//possible commands:
+		// possible commands:
 		// "BUBBLE SORTING"
 		// "INSERT HASH SORTING"
 		// "INSERTS SORTING"
 		// "SELECTION SORTING"
 		// "SHAKE SORTING"
 		// "SHELL SORTING"
+		// "BINARY MERGING SORTING"
+
 		// "MATRIX ADDITION"
 		// "MATRIX SUBTRACTION"
 		// "MATRIX MULTIPLICATION"
+
+		// "SHOW MATRIX"
+		// "SHOW MYARRAY"
+		// "SET LANGUAGE"
+		String file = path + "randomArr3.txt";
 		
-		// menu.menu("BUBBLE SORTING___" + path + "___false___false___true");
+		menu.menu("SET LANGUAGE___EN");
+		menu.menu("BUBBLE SORTING___" + file + "___false___false___true");
+		
+		menu.menu("SET LANGUAGE___RU");
+		menu.menu("BUBBLE SORTING___" + file + "___false___false___true");
+
+		menu.menu("SET LANGUAGE___EN");
+
 		String file1 = path + "randomMatrix4x4.1.txt";
 		String file2 = path + "randomMatrix4x4.2.txt";
-
 		menu.menu("MATRIX SUBTRACTION___" + file1 + "___" + file2);
 
 	}

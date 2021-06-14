@@ -6,7 +6,7 @@ import by.training.service.sorting.*;
  * 
  * @author AlexeySupruniuk
  *
-
+ * 
  */
 
 public class ServiceProvider {
@@ -26,6 +26,7 @@ public class ServiceProvider {
 	private Sorting shakeSorting = new ShakeSorting();
 	private Sorting shellSorting = new ShellSorting();
 	private InsertsHashNumberSorting insertHashSorting = new InsertsHashNumberSorting();
+	private Sorting binaryMergingSorting = new BinaryMergingSorting();
 
 	private MatrixCalculation matrixCalculation = new MatrixCalculationImpl();
 	private Logic logic = new LogicImpl();
@@ -49,9 +50,13 @@ public class ServiceProvider {
 	public Sorting getShellSorting() {
 		return shellSorting;
 	}
-	
+
 	public InsertsHashNumberSorting getInsertsHashNumberSorting() {
 		return insertHashSorting;
+	}
+
+	public Sorting getBinaryMergingSorting() {
+		return binaryMergingSorting;
 	}
 
 	public MatrixCalculation getMatrixCalculation() {

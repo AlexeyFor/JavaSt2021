@@ -47,9 +47,22 @@ public class MyArrayIntegerCreator {
 	 * 
 	 * @param array
 	 * @return MyArray<Integer>
+	 * @throws CreatorException
 	 */
-	public MyArray<Integer> createMA(Integer[] array) {
+	public MyArray<Integer> createMA(Integer[] array) throws CreatorException {
 		LOG.debug("start createMA");
+
+		if (array.length == 0) {
+			LOG.warn("from createMA, wrong array length ");
+			throw new CreatorException("wrong_parametres");
+		}
+
+		for (int i = 0; i < array.length; i++) {
+			if ((array[i] == null)) {
+				LOG.warn("null in array");
+				throw new CreatorException("null in array");
+			}
+		}
 		MyArray<Integer> result = new MyArray<Integer>(array);
 		LOG.debug("return MyArray");
 		return result;

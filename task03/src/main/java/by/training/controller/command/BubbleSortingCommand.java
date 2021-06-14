@@ -31,6 +31,7 @@ public class BubbleSortingCommand<T extends Comparable<T>> implements Command {
 	public String execute(String[] request) {
 		
 		if (request.length != 5) {
+			LOG.warn("wrong request");
 			return "1___wrong_request";
 		}
 		LOG.debug("start execute with " + request[1] + " " + request[2] + " " + request[3] + " " + request[4]);
@@ -59,7 +60,7 @@ public class BubbleSortingCommand<T extends Comparable<T>> implements Command {
 			if (show) {
 				LOG.debug("showing array");
 				ShowMyArray showArr = ShowMyArray.getInstance();
-				showArr.showMyArrayInRow(array, 20);
+				showArr.showMyArrayInRow(array, 50);
 			}
 
 		} catch (ServiceException e) {

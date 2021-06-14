@@ -59,7 +59,7 @@ public class SelectionSortingCommand <T extends Comparable<T>> implements Comman
 			if (show) {
 				LOG.debug("showing array");
 				ShowMyArray showArr = ShowMyArray.getInstance();
-				showArr.showMyArrayInRow(array, 20);
+				showArr.showMyArrayInRow(array, 50);
 			}
 
 		} catch (ServiceException e) {

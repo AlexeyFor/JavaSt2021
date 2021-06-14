@@ -16,13 +16,13 @@ public class InsertsSortingTest {
 
 	@DataProvider(name = "PositiveForSorting")
 	public Object[] positiveForIncrSorting() throws CreatorException {
-		return new Object[] { new MyArray<>(new Integer[] { 5, 5, 5, 5, 5, 5, 5 }),
-				new MyArray<Integer>(new Integer[] { 0, 1, -6, 7, 11, 9, 3 }),
-				new MyArray<Integer>(new Integer[] { 0, 1, 5, 7, 11, 9, 3, Integer.MAX_VALUE, 0, -6,Integer.MAX_VALUE, 3  }),
-				new MyArray<Integer>(new Integer[] { 0, 1, 5, 7, 11, 9, 3, Integer.MIN_VALUE, 0, -6,Integer.MIN_VALUE, 3  }),
-				new MyArray<Integer>(new Integer[] { 0, 1, 5, 7, 11, 9, 3, Integer.MIN_VALUE, 0, -6,Integer.MAX_VALUE, 3  }),
+		return new Object[] { creator.createMA(new Integer[] { 5, 5, 5, 5, 5, 5, 5 }),
+				creator.createMA(new Integer[] { 0, 1, -6, 7, 11, 9, 3 }),
+				creator.createMA(new Integer[] { 0, 1, 5, 3, 5, 9, 3, Integer.MAX_VALUE, 0, -6,Integer.MAX_VALUE, 3  }),
+				creator.createMA(new Integer[] { 0, 1, 5, 7, 11, 9, 3, Integer.MIN_VALUE, 0, -6,Integer.MIN_VALUE, 3  }),
+				creator.createMA(new Integer[] { 0, 1, 5, 7, 11, 9, 3, Integer.MIN_VALUE, 0, -6,Integer.MAX_VALUE, 3  }),
 				new MyArray<Short>(new Short[] { 0, 1, 5, 7, 11, 9, 3, 0, -6, 3  }),
-				new MyArray<Double>(new Double[] { 0.5, -1.0, 15.9, -7.3, 11.2}),
+				new MyArray<Double>(new Double[] { 0.5, -1.0, 15.9, -7.3, 11.2, Double.NaN}),
 				creator.createRandomMA(101, -100, 100),
 				creator.createRandomMA(113, -100, 100),
 				};

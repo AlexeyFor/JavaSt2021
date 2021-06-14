@@ -9,32 +9,19 @@ import by.training.service.ServiceException;
 import by.training.service.ServiceProvider;
 import by.training.view.ShowMyArray;
 
-/**
- * request in form:
- * 
- * command___fileName___ascending___saving___show
- * 
- * filename - name of the file from console
- * 
- * saving - save the result of sorting
- * 
- * show - show the result of sorting on console
- * 
- * @author AlexeySupruniuk
- *
- */
+public class BinaryMergingSortingCommand <T extends Comparable<T>> implements Command {
 
-public class InsertsHashNumberSortingCommand<T extends Number & Comparable<T>> implements Command {
-	private static final Logger LOG = LogManager.getLogger(InsertsHashNumberSortingCommand.class);
+	private static final Logger LOG = LogManager.getLogger(BinaryMergingSortingCommand.class);
 
 	@Override
 	public String execute(String[] request) {
-
-		if (request.length != 6) {
+		
+		if (request.length != 5) {
+			LOG.warn("wrong request");
 			return "1___wrong_request";
 		}
 		LOG.debug("start execute with " + request[1] + " " + request[2] + " " + request[3] + " " + request[4]);
-
+		
 		String fileName = request[1];
 		boolean ascending = Boolean.valueOf(request[2]);
 		boolean saving = Boolean.valueOf(request[3]);
@@ -46,9 +33,9 @@ public class InsertsHashNumberSortingCommand<T extends Number & Comparable<T>> i
 			MyArray<T> array = provider.getLogic().takeMyArray(fileName);
 
 			if (ascending) {
-				provider.getInsertsHashNumberSorting().sortIncr(array);
+				provider.getBinaryMergingSorting().sortIncr(array);
 			} else {
-				provider.getInsertsHashNumberSorting().sortDecr(array);
+				provider.getBinaryMergingSorting().sortDecr(array);
 			}
 
 			if (saving) {
@@ -67,6 +54,7 @@ public class InsertsHashNumberSortingCommand<T extends Number & Comparable<T>> i
 			return "1___" + e.getMessage();
 		}
 
-		return "0___InsertsHashNumber_sort_success";
+		return "0___binary_merge_sort_success";
 	}
+
 }
