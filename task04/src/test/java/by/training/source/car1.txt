@@ -1,0 +1,4 @@
+{"wheelsTypes":["Summer","Summer","Summer","Summer"],
+"mark":"Acura","model":"universal","fuelVolume":50.0,
+"engineFuelConsumptionPerHundred":6.0,"engineType":"Rotary piston internal combustion engine",
+"wheelsDiametres":[19.5,19.5,19.5,19.5],"max_FUEL_VOLUME":100.0}

@@ -1,0 +1,1 @@
+{"wheelsTypes":[null,null,null,null],"mark":"Great Wall","model":"Universal","fuelVolume":50.0,"engineFuelConsumptionPerHundred":"NaN","engineType":null,"wheelsDiametres":["NaN","NaN","NaN","NaN"],"max_FUEL_VOLUME":100.0}

@@ -1,0 +1,1 @@
+{"wheelsTypes":["All-season","All-season","All-season","All-season"],"mark":"Mazda","model":"prime","fuelVolume":50.0,"engineFuelConsumptionPerHundred":"NaN","engineType":null,"wheelsDiametres":[20.0,20.0,20.0,20.0],"max_FUEL_VOLUME":100.0}

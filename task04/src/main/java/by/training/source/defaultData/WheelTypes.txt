@@ -1,0 +1,10 @@
+﻿Asymmetric directional
+Asymmetric omnidirectional
+Symmetric directional
+Symmetric omnidirectional
+Off-road
+Puncture-free
+Low profile
+All-season
+Winter
+Summer

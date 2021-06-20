@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\1488\AppData\Local\Temp\testng-eclipse-771132968\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods,   55 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelNegativeTest1">changeWheelNegativeTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelNegativeTest2">changeWheelNegativeTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelNegativeTest3">changeWheelNegativeTest3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="changeWheelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">changeWheelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">refuelFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelNegativeTest1">refuelNegativeTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelNegativeTest2">refuelNegativeTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">rideFalseTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">rideFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideNegativeTest1">rideNegativeTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideNegativeTest2">rideNegativeTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="by.training.service.CarLogicImplTest" class="method navigator-link" hash-for-method="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.training.service.CarLogicImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelNegativeTest1">
+                  </a> <!-- changeWheelNegativeTest1 -->
+                  <span class="method-name">changeWheelNegativeTest1</span>
+                  <em>
+(negative for refuel (wrong index))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelNegativeTest2">
+                  </a> <!-- changeWheelNegativeTest2 -->
+                  <span class="method-name">changeWheelNegativeTest2</span>
+                  <em>
+(negative for refuel (wrong car))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelNegativeTest3">
+                  </a> <!-- changeWheelNegativeTest3 -->
+                  <span class="method-name">changeWheelNegativeTest3</span>
+                  <em>
+(negative for refuel (wrong wheel))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=15.0, type=Summer]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeWheelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- changeWheelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">changeWheelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=15.0, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], Wheel [diameter=15.0, type=Summer], 3)</span>
+                  <em>
+(positive for changeWheel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- refuelFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 1000.0)</span>
+                  <em>
+(positive for refuel (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelNegativeTest1">
+                  </a> <!-- refuelNegativeTest1 -->
+                  <span class="method-name">refuelNegativeTest1</span>
+                  <em>
+(negative for refuel (wrong fuel))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelNegativeTest2">
+                  </a> <!-- refuelNegativeTest2 -->
+                  <span class="method-name">refuelNegativeTest2</span>
+                  <em>
+(negative for refuel (wrong car))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=Infinity], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0], 40.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">refuelTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=Infinity], 0.0)</span>
+                  <em>
+(positive for refuel (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10000.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideFalseTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (false))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideNegativeTest1">
+                  </a> <!-- rideNegativeTest1 -->
+                  <span class="method-name">rideNegativeTest1</span>
+                  <em>
+(negative for ride (wrong car))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideNegativeTest2">
+                  </a> <!-- rideNegativeTest2 -->
+                  <span class="method-name">rideNegativeTest2</span>
+                  <em>
+(negative for ride (wrong distance))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=Infinity], 10.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=Infinity], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 0.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)">
+                  </a> <!-- rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...) -->
+                  <span class="method-name">rideTrueTest</span>
+                  <span class="parameters">(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0], 10.0)</span>
+                  <em>
+(positive for ride (true))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\1488\AppData\Local\Temp\testng-eclipse-771132968\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;by.training.service.CarLogicImplTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'changeWheelNegativeTest1')
+data.setCell(0, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(0, 3, 286);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'refuelTrueTest')
+data.setCell(1, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(1, 3, 37);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'refuelTrueTest')
+data.setCell(2, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(2, 3, 37);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'refuelNegativeTest1')
+data.setCell(3, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(3, 3, 29);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'rideNegativeTest2')
+data.setCell(4, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(4, 3, 28);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'changeWheelNegativeTest3')
+data.setCell(5, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(5, 3, 23);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'rideTrueTest')
+data.setCell(6, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(6, 3, 21);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'refuelTrueTest')
+data.setCell(7, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(7, 3, 20);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'rideFalseTest')
+data.setCell(8, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(8, 3, 17);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'refuelTrueTest')
+data.setCell(9, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(9, 3, 10);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'changeWheelNegativeTest2')
+data.setCell(10, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(10, 3, 10);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'changeWheelTrueTest')
+data.setCell(11, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(11, 3, 9);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'changeWheelTrueTest')
+data.setCell(12, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(12, 3, 5);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'rideFalseTest')
+data.setCell(13, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(13, 3, 4);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'refuelTrueTest')
+data.setCell(14, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(14, 3, 4);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'rideFalseTest')
+data.setCell(15, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(15, 3, 4);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'rideFalseTest')
+data.setCell(16, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(16, 3, 3);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'refuelTrueTest')
+data.setCell(17, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(17, 3, 3);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'changeWheelTrueTest')
+data.setCell(18, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(18, 3, 3);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'refuelTrueTest')
+data.setCell(19, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(19, 3, 3);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'refuelFalseTest')
+data.setCell(20, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(20, 3, 3);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'rideFalseTest')
+data.setCell(21, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(21, 3, 3);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'changeWheelTrueTest')
+data.setCell(22, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(22, 3, 3);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'refuelTrueTest')
+data.setCell(23, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(23, 3, 3);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'refuelTrueTest')
+data.setCell(24, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(24, 3, 3);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'changeWheelTrueTest')
+data.setCell(25, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(25, 3, 3);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'refuelTrueTest')
+data.setCell(26, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'refuelTrueTest')
+data.setCell(27, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'refuelTrueTest')
+data.setCell(28, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'rideFalseTest')
+data.setCell(29, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'refuelNegativeTest2')
+data.setCell(30, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'refuelTrueTest')
+data.setCell(31, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(31, 3, 2);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'rideTrueTest')
+data.setCell(32, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(32, 3, 2);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'refuelTrueTest')
+data.setCell(33, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(33, 3, 2);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'rideTrueTest')
+data.setCell(34, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(34, 3, 2);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'rideNegativeTest1')
+data.setCell(35, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(35, 3, 2);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'refuelTrueTest')
+data.setCell(36, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(36, 3, 2);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'rideTrueTest')
+data.setCell(37, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(37, 3, 2);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'refuelTrueTest')
+data.setCell(38, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(38, 3, 2);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'refuelTrueTest')
+data.setCell(39, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(39, 3, 2);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'rideFalseTest')
+data.setCell(40, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(40, 3, 2);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'changeWheelTrueTest')
+data.setCell(41, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(41, 3, 2);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'rideTrueTest')
+data.setCell(42, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(42, 3, 2);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'refuelTrueTest')
+data.setCell(43, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(43, 3, 2);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'refuelTrueTest')
+data.setCell(44, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(44, 3, 2);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'rideTrueTest')
+data.setCell(45, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(45, 3, 2);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'rideTrueTest')
+data.setCell(46, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(46, 3, 1);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'rideTrueTest')
+data.setCell(47, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(47, 3, 1);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'rideTrueTest')
+data.setCell(48, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(48, 3, 1);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'refuelTrueTest')
+data.setCell(49, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(49, 3, 1);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'rideTrueTest')
+data.setCell(50, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(50, 3, 1);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'rideTrueTest')
+data.setCell(51, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(51, 3, 1);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'rideTrueTest')
+data.setCell(52, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(52, 3, 1);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'rideTrueTest')
+data.setCell(53, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(53, 3, 1);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'rideTrueTest')
+data.setCell(54, 2, 'by.training.service.CarLogicImplTest')
+data.setCell(54, 3, 1);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 623 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.training.service.CarLogicImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">changeWheelNegativeTest1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelNegativeTest2</span>
+                <span class="method-start">298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelNegativeTest3</span>
+                <span class="method-start">314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeWheelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelNegativeTest1</span>
+                <span class="method-start">467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelNegativeTest2</span>
+                <span class="method-start">499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">791 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">refuelTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideFalseTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">897 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideNegativeTest1</span>
+                <span class="method-start">902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideNegativeTest2</span>
+                <span class="method-start">940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">1000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [...)</span>
+                <span class="method-start">1003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, ...)</span>
+                <span class="method-start">1006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">1011 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">1058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter...)</span>
+                <span class="method-start">1100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rideTrueTest(Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [...)</span>
+                <span class="method-start">1107 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,1 @@
+{"wheelsTypes":["Summer","Summer","Summer",null],"mark":"Chevrolet","model":"simple","fuelVolume":50.0,"engineFuelConsumptionPerHundred":9.0,"engineType":"Electric motors","wheelsDiametres":[15.0,15.0,15.0,"NaN"],"max_FUEL_VOLUME":100.0}

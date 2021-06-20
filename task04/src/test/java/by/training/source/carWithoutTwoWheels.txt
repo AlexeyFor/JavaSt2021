@@ -1,0 +1,1 @@
+{"wheelsTypes":["Summer","Summer",null,null],"mark":"Acura","model":"prime","fuelVolume":50.0,"engineFuelConsumptionPerHundred":5.5,"engineType":"﻿Steam engine","wheelsDiametres":[15.0,15.0,"NaN","NaN"],"max_FUEL_VOLUME":100.0}

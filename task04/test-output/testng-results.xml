@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="55" passed="55" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-20T17:15:07 MSK" name="Default suite" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1213">
+    <groups>
+    </groups>
+    <test started-at="2021-06-20T17:15:07 MSK" name="Default test" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1213">
+      <class name="by.training.service.CarLogicImplTest">
+        <test-method signature="changeWheelNegativeTest1()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:07 MSK" name="changeWheelNegativeTest1" description="negative for refuel (wrong index)" finished-at="2021-06-20T17:15:07 MSK" duration-ms="286" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[wrong_index]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: wrong_index
+at by.training.service.CarLogicImpl.changeWheel(CarLogicImpl.java:80)
+at by.training.service.CarLogicImplTest.changeWheelNegativeTest1(CarLogicImplTest.java:202)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelNegativeTest1 -->
+        <test-method signature="changeWheelNegativeTest2()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:07 MSK" name="changeWheelNegativeTest2" description="negative for refuel (wrong car)" finished-at="2021-06-20T17:15:07 MSK" duration-ms="10" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[car_null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: car_null
+at by.training.service.CarLogicImpl.changeWheel(CarLogicImpl.java:74)
+at by.training.service.CarLogicImplTest.changeWheelNegativeTest2(CarLogicImplTest.java:209)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelNegativeTest2 -->
+        <test-method signature="changeWheelNegativeTest3()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:07 MSK" name="changeWheelNegativeTest3" description="negative for refuel (wrong wheel)" finished-at="2021-06-20T17:15:07 MSK" duration-ms="23" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[wheel_null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: wheel_null
+at by.training.service.CarLogicImpl.changeWheel(CarLogicImpl.java:77)
+at by.training.service.CarLogicImplTest.changeWheelNegativeTest3(CarLogicImplTest.java:217)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelNegativeTest3 -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:07 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:07 MSK" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=15.0, type=Summer]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=15.0, type=Summer]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="changeWheelTrueTest(by.training.entity.Car,by.training.entity.Wheel,int)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="changeWheelTrueTest" description="positive for changeWheel (true)" data-provider="changeWheelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=15.0, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wheel [diameter=15.0, type=Summer]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeWheelTrueTest -->
+        <test-method signature="refuelFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelFalseTest" description="positive for refuel (false)" data-provider="refuelPositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelFalseTest -->
+        <test-method signature="refuelNegativeTest1()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelNegativeTest1" description="negative for refuel (wrong fuel)" finished-at="2021-06-20T17:15:08 MSK" duration-ms="29" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[wrong_fuel]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: wrong_fuel
+at by.training.service.CarLogicImpl.refuel(CarLogicImpl.java:53)
+at by.training.service.CarLogicImplTest.refuelNegativeTest1(CarLogicImplTest.java:188)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelNegativeTest1 -->
+        <test-method signature="refuelNegativeTest2()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelNegativeTest2" description="negative for refuel (wrong car)" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[car_null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: car_null
+at by.training.service.CarLogicImpl.refuel(CarLogicImpl.java:47)
+at by.training.service.CarLogicImplTest.refuelNegativeTest2(CarLogicImplTest.java:194)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelNegativeTest2 -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=Infinity]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=60.0, MAX_FUEL_VOLUME=Infinity]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=60.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="refuelTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="refuelTrueTest" description="positive for refuel (true)" data-provider="refuelPositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=100.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refuelTrueTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideFalseTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideFalseTest" description="positive for ride (false)" data-provider="ridePositiveFalse" finished-at="2021-06-20T17:15:08 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideFalseTest -->
+        <test-method signature="rideNegativeTest1()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideNegativeTest1" description="negative for ride (wrong car)" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[car_null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: car_null
+at by.training.service.CarLogicImpl.ride(CarLogicImpl.java:28)
+at by.training.service.CarLogicImplTest.rideNegativeTest1(CarLogicImplTest.java:174)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideNegativeTest1 -->
+        <test-method signature="rideNegativeTest2()[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideNegativeTest2" description="negative for ride (wrong distance)" finished-at="2021-06-20T17:15:08 MSK" duration-ms="28" status="PASS">
+          <exception class="by.training.service.ServiceException">
+            <message>
+              <![CDATA[wrong_distance]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[by.training.service.ServiceException: wrong_distance
+at by.training.service.CarLogicImpl.ride(CarLogicImpl.java:31)
+at by.training.service.CarLogicImplTest.rideNegativeTest2(CarLogicImplTest.java:181)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.training.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideNegativeTest2 -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Acura, model=prime, engine=Engine [fuelConsumptionPerHundred=5.5, type=п»їSteam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Subaru, model=Old Style, engine=Engine [fuelConsumptionPerHundred=6.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season], Wheel [diameter=20.0, type=All-season]], mark=Mazda, model=prime, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null], Wheel [diameter=NaN, type=null]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=NaN, type=null], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=Infinity]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=Infinity, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="21" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam-Engine], fuelVolume=0.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=15.0, type=Summer], Wheel [diameter=NaN, type=null]], mark=Chevrolet, model=simple, engine=Engine [fuelConsumptionPerHundred=9.0, type=Electric motors], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer], Wheel [diameter=19.5, type=Summer]], mark=Acura, model=universal, engine=Engine [fuelConsumptionPerHundred=6.0, type=Rotary piston internal combustion engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=universal, engine=Engine [fuelConsumptionPerHundred=9.0, type=Steam engine], fuelVolume=50.0, MAX_FUEL_VOLUME=Infinity]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+        <test-method signature="rideTrueTest(by.training.entity.Car,double)[pri:0, instance:by.training.service.CarLogicImplTest@7a527389]" started-at="2021-06-20T17:15:08 MSK" name="rideTrueTest" description="positive for ride (true)" data-provider="ridePositiveTrue" finished-at="2021-06-20T17:15:08 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Car [wheels=[Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season], Wheel [diameter=19.5, type=All-season]], mark=Great Wall, model=Universal, engine=Engine [fuelConsumptionPerHundred=0.0, type=Steam-Engine], fuelVolume=50.0, MAX_FUEL_VOLUME=100.0]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rideTrueTest -->
+      </class> <!-- by.training.service.CarLogicImplTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

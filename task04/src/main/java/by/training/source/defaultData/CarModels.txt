@@ -1,0 +1,8 @@
+﻿model A
+model B
+model+
+prime
+universal
+simple
+priora
+Old Style

@@ -1,0 +1,3 @@
+﻿{"wheelsTypes":["All-season","All-season","All-season","All-season"],
+"mark":"Great Wall","model":"universal","fuelVolume":0.0,"engineFuelConsumptionPerHundred":7.0,
+"engineType":"﻿Steam engine","wheelsDiametres":[19.5,19.5,19.5,19.5],max_FUEL_VOLUME:0}

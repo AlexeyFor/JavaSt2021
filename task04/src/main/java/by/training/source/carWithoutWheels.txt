@@ -1,0 +1,1 @@
+{"wheelsTypes":[null,null,null,null],"mark":"Subaru","model":"Old Style","fuelVolume":50.0,"engineFuelConsumptionPerHundred":6.0,"engineType":"Electric motors","wheelsDiametres":["NaN","NaN","NaN","NaN"],"max_FUEL_VOLUME":100.0}
