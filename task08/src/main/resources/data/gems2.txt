@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.training.by/entities" xsi:schemaLocation="http://www.training.by/entities  gems.xsd">
+
+	<unprocessedGem ID="1000001" preciousness="precious">
+		<name>diamond</name>
+		<price>2500</price>
+		<dateOfReceiving>2020-05-05</dateOfReceiving>
+		<originCountry>Nigeria</originCountry>
+		<colour>white</colour>
+		<transporancy>56</transporancy>
+		<weight>56.0</weight>
+		<height>11.0</height>
+		<length>5.0</length>
+		<width>7.0</width>
+	</unprocessedGem>
+
+
+	
+		<unprocessedGem ID="1000004" >
+		<name>emerald</name>
+		<price>4000000</price>
+		<dateOfReceiving>2014-03-03</dateOfReceiving>
+		<originCountry>Nikaragua</originCountry>
+		<colour>green</colour>
+		<transporancy>37</transporancy>
+		<weight>2.4</weight>
+		<height>13.0</height>
+		<length>5.2</length>
+		<width>7.1</width>
+	</unprocessedGem>
+	
+
+	
+	<unprocessedGem ID="1000006" preciousness="precious">
+		<name>pearl</name>
+		<price>1300</price>
+		<dateOfReceiving>2012-07-06</dateOfReceiving>
+		<originCountry>Cuba</originCountry>
+		<colour>white</colour>
+		<transporancy>100</transporancy>
+		<weight>5.7</weight>
+		<height>4.0</height>
+		<length>4.0</length>
+		<width>4.0</width>
+	</unprocessedGem>
+
+<unprocessedGem ID="1000007" preciousness="half-precious">
+		<name>amethyst</name>
+		<price>30</price>
+		<dateOfReceiving>2012-03-06</dateOfReceiving>
+		<originCountry>Brazil</originCountry>
+		<colour>violet</colour>
+		<transporancy>37</transporancy>
+		<weight>7.4</weight>
+		<height>12.0</height>
+		<length>5.4</length>
+		<width>7.3</width>
+	</unprocessedGem>
+
+
+<unprocessedGem ID="1000008" preciousness="half-precious">
+		<name>chrysolite</name>
+		<price>37</price>
+		<dateOfReceiving>2012-11-06</dateOfReceiving>
+		<originCountry>asd</originCountry>
+		<colour>golden</colour>
+		<transporancy>50</transporancy>
+		<weight>7.1</weight>
+		<height>6.0</height>
+		<length>5.4</length>
+		<width>2.3</width>
+	</unprocessedGem>
+
+<unprocessedGem preciousness="half-precious" ID="1000015" >
+		<name>chrysolite</name>
+		<price>37</price>
+		<dateOfReceiving>2012-11-06</dateOfReceiving>
+		<originCountry>asd</originCountry>
+		<colour>golden</colour>
+		<transporancy>50</transporancy>
+		<weight>7.1</weight>
+		<height>6.0</height>
+		<length>5.4</length>
+		<width>2.3</width>
+	</unprocessedGem>
+
+
+
+
+</gems>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.training.by/entities"
+xmlns:mstns="http://www.training.by/entities"
+ xmlns:tns="http://www.training.by/entities" elementFormDefault="qualified">
+
+	<element name="gems">
+		<complexType>
+			<sequence>
+				<element ref="tns:gem" minOccurs="1" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+		  <unique name="UniqueGemKey">
+    <selector xpath="mstns:processedGem|mstns:unprocessedGem" /> 
+    <field xpath="@ID" /> 
+  </unique>
+	</element>
+
+	<element name="gem" type="tns:Gem" abstract="true"></element>
+	<element name="processedGem" type="tns:ProcessedGem" substitutionGroup="tns:gem"></element>
+	<element name="unprocessedGem" type="tns:UnprocessedGem" substitutionGroup="tns:gem"></element>
+
+	<complexType name="Gem">
+		<sequence>
+			<element name="name">
+				<simpleType>
+					<restriction base="string">
+						<pattern value="[a-zA-Z]{1,30}" />
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="price">
+				<simpleType>
+					<restriction base="int">
+						<minInclusive value="0" />
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="dateOfReceiving" type="date" />
+			<element name="originCountry" type="string" minOccurs="1" default="none" />
+			<element name="colour" type="string" />
+			<element name="transporancy">
+				<simpleType>
+					<restriction base="int">
+						<minInclusive value="0" />
+						<maxInclusive value="100" />
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="weight">
+				<simpleType>
+					<restriction base="decimal">
+						<minInclusive value="0" />
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+
+		<attribute  name="ID" use="required" type="token" />
+
+		<attribute name="preciousness"  use="optional"  default="notClassified">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="notClassified"></enumeration>
+					<enumeration value="precious"></enumeration>
+					<enumeration value="half-precious"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+
+	</complexType>
+
+
+	<complexType name="ProcessedGem">
+		<complexContent>
+			<extension base="tns:Gem">
+				<sequence>
+					<element name="processedType">
+						<simpleType>
+							<restriction base="string">
+								<enumeration value="manual"></enumeration>
+								<enumeration value="half-manual"></enumeration>
+								<enumeration value="automatic"></enumeration>
+							</restriction>
+						</simpleType>
+					</element>
+					<element name="facesNumber">
+						<simpleType>
+							<restriction base="int">
+								<minInclusive value="4" />
+								<maxInclusive value="15" />
+							</restriction>
+						</simpleType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="UnprocessedGem">
+		<complexContent>
+			<extension base="tns:Gem">
+				<sequence>
+					<element name="height" type="decimal" />
+					<element name="length" type="decimal" />
+					<element name="width" type="decimal" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+
+</schema>
